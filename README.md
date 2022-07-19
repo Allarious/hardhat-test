@@ -1,5 +1,5 @@
 
-#Sample Hardhat project
+# Sample Hardhat project
 
 Just some fun with hardhat!
 
