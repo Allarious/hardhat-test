@@ -9,3 +9,5 @@ typechain-types
 cache
 artifacts
 
+#API keys
+config.ts

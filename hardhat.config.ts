@@ -1,4 +1,5 @@
 import { HardhatUserConfig, task, types } from "hardhat/config";
+import { nodeAPI } from "./config"
 import "@nomicfoundation/hardhat-toolbox";
 import "@nomiclabs/hardhat-ethers"
 
@@ -12,7 +13,14 @@ const config: HardhatUserConfig = {
           version: "0.5.5"
         }
       ]
-  },
+    },
+    networks: {
+      hardhat: {
+        forking: {
+          url: nodeAPI,
+        }
+      }
+    }
 };
 
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
