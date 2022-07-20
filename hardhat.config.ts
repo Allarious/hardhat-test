@@ -35,7 +35,12 @@ task("balance", "Prints an account's balance")
 //   .setAction(async ({ greeting }) => console.log(greeting));
 
 task("hello", "Prints hello mutiple times.")
-  .addOptionalParam("times", "how many times hello is printed", 1, types.int)
+  .addOptionalParam(
+      "times",
+      "how many times hello is printed",
+      1,
+      types.int
+    )
   .setAction(async ({ times }) => {
     for(let i = 0; i < times; i++){
       console.log("Hello")
